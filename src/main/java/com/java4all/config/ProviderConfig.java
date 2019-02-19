@@ -25,6 +25,10 @@ public class ProviderConfig {
 		return dataSource;
 	}
 
+	/**
+	 * 建议从配置文件获取
+	 * @return
+	 */
 	public DataSource invokeGetDataSource() {
 		BasicDataSource bds = new BasicDataSource();
 		bds.setDriverClassName("com.mysql.jdbc.Driver");
